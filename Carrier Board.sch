@@ -6587,11 +6587,6 @@ on the TMP-36.  It draws only about 50uA</text>
 <label x="149.86" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="172.72" x2="111.76" y2="172.72" width="0.1524" layer="91"/>
-<label x="104.14" y="172.72" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="106.68" y1="144.78" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <label x="106.68" y="144.78" size="1.778" layer="95"/>
@@ -6625,6 +6620,11 @@ on the TMP-36.  It draws only about 50uA</text>
 <wire x1="127" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="J3" gate="J$1" pin="1"/>
 <label x="124.46" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="165.1" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<label x="104.14" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -6839,14 +6839,14 @@ on the TMP-36.  It draws only about 50uA</text>
 </net>
 <net name="VCC-EXT" class="0">
 <segment>
-<wire x1="104.14" y1="170.18" x2="111.76" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<label x="101.6" y="170.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J6" gate="G$1" pin="5"/>
 <wire x1="106.68" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
 <label x="93.98" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="167.64" x2="111.76" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<label x="99.06" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USER-SW" class="0">
@@ -6906,9 +6906,9 @@ on the TMP-36.  It draws only about 50uA</text>
 <label x="152.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="167.64" x2="111.76" y2="167.64" width="0.1524" layer="91"/>
-<label x="104.14" y="167.64" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="172.72" x2="104.14" y2="172.72" width="0.1524" layer="91"/>
+<label x="104.14" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -6918,9 +6918,9 @@ on the TMP-36.  It draws only about 50uA</text>
 <label x="152.4" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="165.1" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
-<label x="104.14" y="165.1" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="170.18" x2="104.14" y2="170.18" width="0.1524" layer="91"/>
+<label x="104.14" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
