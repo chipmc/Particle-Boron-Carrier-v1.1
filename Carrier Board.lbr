@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -40,7 +40,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -336,6 +336,10 @@ by exp-lbrs.ulp</description>
 <rectangle x1="7.62" y1="50.8" x2="15.24" y2="52.07" layer="21"/>
 <text x="2.794" y="44.196" size="0.6096" layer="25" font="vector">16</text>
 <text x="19.304" y="34.036" size="0.6096" layer="25" font="vector">12</text>
+<hole x="2.54" y="2.54" drill="2.54"/>
+<hole x="20.32" y="2.54" drill="2.54"/>
+<hole x="20.32" y="48.26" drill="2.54"/>
+<hole x="2.54" y="48.26" drill="2.54"/>
 </package>
 </packages>
 <symbols>
@@ -487,7 +491,7 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PARTICLE-DEVICES-BORON">
+<deviceset name="PARTICLE-DEVICES-BORON" prefix="P">
 <description>Particle Boron Device for Carrier Board Placement</description>
 <gates>
 <gate name="G$1" symbol="PARTICLE-DEVICES-BORON" x="0" y="0"/>
