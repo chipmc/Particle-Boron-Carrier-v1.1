@@ -5538,6 +5538,149 @@ STAND-OFF</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
+<description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
+This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOD-323" urn="urn:adsk.eagle:footprint:38400/1" library_version="1">
+<description>SOD-323 (Small Outline Diode)</description>
+<wire x1="-1.77" y1="0.625" x2="-1.77" y2="-0.625" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="-0.625" x2="0.9" y2="-0.625" width="0.2032" layer="21"/>
+<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="PANASONIC_SMINI2-F5-B" urn="urn:adsk.eagle:footprint:38404/1" library_version="1">
+<description>From http://www.semicon.panasonic.co.jp/ds4/DZ2J150_E.pdf</description>
+<wire x1="-1.897" y1="0.625" x2="-1.897" y2="-0.625" width="0.2032" layer="21"/>
+<wire x1="-0.85" y1="0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<smd name="C" x="-1.2" y="0" dx="0.9" dy="1.1" layer="1"/>
+<smd name="A" x="1.2" y="0" dx="0.9" dy="0.9" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOD-323" urn="urn:adsk.eagle:package:38441/1" type="box" library_version="1">
+<description>SOD-323 (Small Outline Diode)</description>
+<packageinstances>
+<packageinstance name="SOD-323"/>
+</packageinstances>
+</package3d>
+<package3d name="PANASONIC_SMINI2-F5-B" urn="urn:adsk.eagle:package:38444/1" type="box" library_version="1">
+<description>From http://www.semicon.panasonic.co.jp/ds4/DZ2J150_E.pdf</description>
+<packageinstances>
+<packageinstance name="PANASONIC_SMINI2-F5-B"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="DIODE-ZENER" urn="urn:adsk.eagle:symbol:38403/1" library_version="1">
+<description>&lt;h3&gt;Zener Diode&lt;/h3&gt;
+Allows current flow in one direction, but allows reverse flow when above breakdown voltage.</description>
+<wire x1="1.27" y1="0.889" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-0.889" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.889" x2="1.778" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-0.889" x2="0.762" y2="-1.397" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="1.27"/>
+<vertex x="1.27" y="0"/>
+<vertex x="-1.27" y="-1.27"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIODE-ZENER" urn="urn:adsk.eagle:component:38465/1" prefix="D" library_version="1">
+<description>&lt;h3&gt;Zener Diode&lt;/h3&gt;
+&lt;p&gt;A Zener diode allows current to flow from its anode to its cathode like a normal semiconductor diode, but it also permits current to flow in the reverse direction when its "Zener voltage" is reached. - WIkipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MM3Z3V3T1G" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38441/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-11284"/>
+<attribute name="VALUE" value="3.3V"/>
+</technology>
+</technologies>
+</device>
+<device name="-MMSZ5232BS" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38441/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12442"/>
+<attribute name="VALUE" value="5.6V"/>
+</technology>
+</technologies>
+</device>
+<device name="-DZ2J150M0L" package="PANASONIC_SMINI2-F5-B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38444/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12989"/>
+<attribute name="VALUE" value="15V"/>
+</technology>
+</technologies>
+</device>
+<device name="-BZT52C3V6S" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38441/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-08199" constant="no"/>
+<attribute name="VALUE" value="3.6V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5777,6 +5920,13 @@ STAND-OFF</description>
 <part name="H2" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H3" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H4" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
+<part name="JP7" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_PASTE" device="_SILK">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="D3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-ZENER" device="-DZ2J150M0L" package3d_urn="urn:adsk.eagle:package:38444/1" value="6.2V/500mW">
+<attribute name="MPN" value="TDZ6V2J,115"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -6502,7 +6652,7 @@ for Unprotected Environments</text>
 <text x="86.36" y="177.8" size="2.54" layer="94" ratio="10">Particle Boron / Argon / Xenon Carrier Board - Power Control</text>
 <text x="175.26" y="10.16" size="2.54" layer="94">Chip McClelland</text>
 <text x="238.76" y="7.62" size="2.54" layer="94">v1.1</text>
-<text x="68.58" y="106.68" size="2.54" layer="97">Device TPS62291 has 
+<text x="68.58" y="106.68" size="1.778" layer="94">Device TPS62291 has 
 short circuit protection. 
 Vin is protected by F1</text>
 <text x="149.86" y="27.94" size="2.54" layer="94" ratio="10">Particle Boron / Argon / Xenon Carrier Board </text>
@@ -6515,6 +6665,9 @@ SW1 - Enables the two power switches and is powered by either Battery or DC-In
 
 RTC Power will be the higher or Li+ or DC-In
 </text>
+<text x="86.36" y="88.9" size="1.778" layer="94">Zener diode will clamp the voltage
+to prevent damaging the Xenon/Argon.  
+The Boron can handle up to 9V</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -6530,18 +6683,18 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="VALUE" x="81.0006" y="125.9586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 <attribute name="MPN" x="86.36" y="142.24" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U5" gate="G$1" x="86.36" y="68.58" smashed="yes">
-<attribute name="NAME" x="81.6356" y="82.7786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="81.0006" y="52.2986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-<attribute name="MPN" x="86.36" y="68.58" size="1.778" layer="96" display="off"/>
+<instance part="U5" gate="G$1" x="96.52" y="68.58" smashed="yes">
+<attribute name="NAME" x="91.7956" y="82.7786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="91.1606" y="52.2986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="MPN" x="96.52" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S1" gate="1" x="22.86" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.59" y="118.872" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="21.844" y="125.222" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 <attribute name="MPN" x="22.86" y="121.92" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="GND10" gate="1" x="58.42" y="45.72" smashed="yes">
-<attribute name="VALUE" x="58.42" y="45.466" size="1.778" layer="96" align="top-center"/>
+<instance part="GND10" gate="1" x="68.58" y="45.72" smashed="yes">
+<attribute name="VALUE" x="68.58" y="45.466" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="C4" gate="G$1" x="66.04" y="129.54" smashed="yes">
 <attribute name="NAME" x="62.484" y="127.381" size="1.778" layer="95"/>
@@ -6550,12 +6703,12 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="HOUSEPART" x="66.04" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="POPULATE" x="66.04" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C5" gate="G$1" x="66.04" y="55.88" smashed="yes">
-<attribute name="NAME" x="62.484" y="53.721" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.484" y="58.801" size="1.778" layer="96"/>
-<attribute name="MPN" x="66.04" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="HOUSEPART" x="66.04" y="55.88" size="1.778" layer="96" display="off"/>
-<attribute name="POPULATE" x="66.04" y="55.88" size="1.778" layer="96" display="off"/>
+<instance part="C5" gate="G$1" x="76.2" y="55.88" smashed="yes">
+<attribute name="NAME" x="72.644" y="53.721" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.644" y="58.801" size="1.778" layer="96"/>
+<attribute name="MPN" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="HOUSEPART" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="76.2" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="7.62" y="106.68" smashed="yes">
 <attribute name="VALUE" x="7.62" y="106.426" size="1.778" layer="96" align="top-center"/>
@@ -6573,9 +6726,9 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="NAME" x="50.8" y="154.4574" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="50.8" y="147.0914" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D2" gate="G$1" x="50.8" y="76.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="53.34" y="80.7974" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="53.34" y="73.4314" size="1.778" layer="96" rot="R180"/>
+<instance part="D2" gate="G$1" x="35.56" y="76.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.1" y="80.7974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="38.1" y="73.4314" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R9" gate="G$1" x="116.84" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="115.3414" y="140.97" size="1.778" layer="95" rot="R90"/>
@@ -6583,17 +6736,17 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="HOUSEPART" x="116.84" y="144.78" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="116.84" y="144.78" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R8" gate="G$1" x="114.3" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="112.8014" y="67.31" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="117.602" y="67.31" size="1.778" layer="96" rot="R90"/>
-<attribute name="HOUSEPART" x="114.3" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MPN" x="114.3" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R8" gate="G$1" x="124.46" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="122.9614" y="67.31" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="127.762" y="67.31" size="1.778" layer="96" rot="R90"/>
+<attribute name="HOUSEPART" x="124.46" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="124.46" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C6" gate="G$1" x="114.3" y="53.34" smashed="yes">
-<attribute name="NAME" x="115.824" y="56.261" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.824" y="51.181" size="1.778" layer="96"/>
-<attribute name="HOUSEPART" x="114.3" y="53.34" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="114.3" y="53.34" size="1.778" layer="96" display="off"/>
+<instance part="C6" gate="G$1" x="124.46" y="53.34" smashed="yes">
+<attribute name="NAME" x="125.984" y="56.261" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.984" y="51.181" size="1.778" layer="96"/>
+<attribute name="HOUSEPART" x="124.46" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="124.46" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND11" gate="1" x="147.32" y="48.26" smashed="yes">
 <attribute name="VALUE" x="144.78" y="45.72" size="1.778" layer="96"/>
@@ -6603,9 +6756,9 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="VALUE" x="165.862" y="52.07" size="1.778" layer="96" rot="R90"/>
 <attribute name="MPN" x="162.56" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="J6" gate="G$1" x="58.42" y="96.52" smashed="yes">
-<attribute name="NAME" x="55.88" y="102.362" size="1.778" layer="95"/>
-<attribute name="MFG" x="58.42" y="96.52" size="1.778" layer="96" display="off"/>
+<instance part="J6" gate="G$1" x="76.2" y="96.52" smashed="yes">
+<attribute name="NAME" x="73.66" y="102.362" size="1.778" layer="95"/>
+<attribute name="MFG" x="76.2" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="F1" gate="F1" x="134.62" y="76.2" smashed="yes">
 <attribute name="NAME" x="136.525" y="79.375" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -6623,8 +6776,8 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="NAME" x="149.86" y="67.564" size="1.016" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="149.86" y="64.516" size="1.016" layer="96" font="vector"/>
 </instance>
-<instance part="GND8" gate="1" x="55.88" y="83.82" smashed="yes">
-<attribute name="VALUE" x="53.34" y="81.28" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="58.42" y="81.28" smashed="yes">
+<attribute name="VALUE" x="55.88" y="78.74" size="1.778" layer="96"/>
 </instance>
 <instance part="V3" gate="G$1" x="231.14" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="229.6414" y="130.81" size="1.778" layer="95" rot="R90"/>
@@ -6657,6 +6810,16 @@ RTC Power will be the higher or Li+ or DC-In
 <attribute name="VALUE" x="201.93" y="131.826" size="1.778" layer="96" font="vector" align="top-center"/>
 <attribute name="MPN" x="200.66" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="JP7" gate="G$1" x="73.66" y="86.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.12" y="88.9" size="1.778" layer="95" font="vector"/>
+<attribute name="POPULATE" x="73.66" y="86.36" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="D3" gate="G$1" x="63.5" y="86.36" smashed="yes">
+<attribute name="NAME" x="60.96" y="88.392" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="60.96" y="84.328" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="MPN" x="63.5" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="63.5" y="86.36" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6664,20 +6827,20 @@ RTC Power will be the higher or Li+ or DC-In
 <net name="EN/UVLO" class="0">
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
-<wire x1="25.4" y1="121.92" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="121.92" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="121.92" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
-<junction x="40.64" y="121.92"/>
+<wire x1="25.4" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="121.92" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="121.92" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
+<junction x="50.8" y="121.92"/>
 <pinref part="U4" gate="G$1" pin="EN/UVLO"/>
-<wire x1="40.64" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="EN/UVLO"/>
 <wire x1="66.04" y1="134.62" x2="71.12" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="66.04" y="134.62"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<junction x="66.04" y="60.96"/>
+<wire x1="76.2" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<junction x="76.2" y="60.96"/>
 <label x="43.18" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6699,16 +6862,16 @@ RTC Power will be the higher or Li+ or DC-In
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="66.04" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="53.34" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="53.34" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="GND"/>
-<wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="68.58" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
-<junction x="58.42" y="53.34"/>
+<wire x1="68.58" y1="50.8" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="68.58" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<junction x="68.58" y="53.34"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
-<junction x="58.42" y="50.8"/>
+<wire x1="68.58" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<junction x="68.58" y="50.8"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="O"/>
@@ -6729,8 +6892,12 @@ RTC Power will be the higher or Li+ or DC-In
 <segment>
 <pinref part="J6" gate="G$1" pin="-"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="58.42" y1="91.44" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="91.44" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="91.44" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="58.42" y1="86.36" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+<junction x="58.42" y="86.36"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="-"/>
@@ -6772,48 +6939,52 @@ RTC Power will be the higher or Li+ or DC-In
 <wire x1="7.62" y1="149.86" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="CATHODE"/>
-<wire x1="45.72" y1="149.86" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="CATHODE"/>
-<wire x1="30.48" y1="149.86" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="76.2" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
-<junction x="30.48" y="149.86"/>
+<wire x1="27.94" y1="149.86" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="76.2" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
+<junction x="27.94" y="149.86"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="DC-IN" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="VIN"/>
 <pinref part="D2" gate="G$1" pin="ANODE"/>
-<wire x1="71.12" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="76.2" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
-<junction x="60.96" y="76.2"/>
+<wire x1="81.28" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<junction x="78.74" y="76.2"/>
 <pinref part="J6" gate="G$1" pin="+"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="86.36" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<junction x="78.74" y="86.36"/>
+<label x="81.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="U5" gate="G$1" pin="CT"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="58.42" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="QOD"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="68.58" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="68.58" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="VOUT"/>
-<wire x1="101.6" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<junction x="114.3" y="76.2"/>
+<wire x1="124.46" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<junction x="124.46" y="76.2"/>
 <pinref part="F1" gate="F1" pin="1"/>
 </segment>
 </net>
@@ -6919,6 +7090,13 @@ RTC Power will be the higher or Li+ or DC-In
 <label x="210.82" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="JP7" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6930,7 +7108,8 @@ BATT-IN is on whenever a battery is connected
 
 Li+ is on when there is a battery and when the switch SW1 is on.
 
-Note, RTC functionality is available for applications with no battery but not the control over the EN pin.
+Note, RTC functionality is available for applications with no battery but not the control
+over the EN pin.
 
 D6 / DEEP SLEEP  on the Electron can put the device into deep sleep and then 
 only the RTC can wake it.  </text>
