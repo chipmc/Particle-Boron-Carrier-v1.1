@@ -5701,7 +5701,7 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <attribute name="MPN" value="MF-CAP-0805-0.1uF"/>
 <attribute name="POPULATE" value="1"/>
 </part>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="LOCK">
+<part name="J7" library="SparkFun-Connectors" deviceset="M06" device="LOCK">
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="G1" library="Custom Components" deviceset="D5V0L4B5TS" device="">
@@ -5758,10 +5758,10 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <part name="J5" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device="" value="S2B-PH-SM4-TB(LF)(SN)">
 <attribute name="MFG" value="JST S2B-PH-SM4-TB(LF)(SN)"/>
 </part>
-<part name="J6" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device="" value="S2B-PH-SM4-TB(LF)(SN)">
+<part name="J4" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device="" value="S2B-PH-SM4-TB(LF)(SN)">
 <attribute name="MFG" value="JST S2B-PH-SM4-TB(LF)(SN)"/>
 </part>
-<part name="F1" library="SparkFun-Fuses" deviceset="PPTC" device="_HALF-AMP" value="6V/0.5A">
+<part name="F1" library="SparkFun-Fuses" deviceset="PPTC" device="_HALF-AMP" value="63V/1.5A">
 <attribute name="MPN" value="046801.5NR"/>
 </part>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k">
@@ -5820,12 +5820,12 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <attribute name="MPN" value="B4B-PH-SM4-TB(LF)(SN)"/>
 <attribute name="POPULATE" value="1"/>
 </part>
-<part name="J2" library="OPL_Connector" deviceset="GROVE-CONNECTOR-SMD(4+2P-2.0)" device="" package3d_urn="urn:adsk.eagle:package:8004549/1" value="H4P-SMD-2.0">
+<part name="J6" library="OPL_Connector" deviceset="GROVE-CONNECTOR-SMD(4+2P-2.0)" device="" package3d_urn="urn:adsk.eagle:package:8004549/1" value="H4P-SMD-2.0">
 <attribute name="MPN" value="B4B-PH-SM4-TB(LF)(SN)"/>
 <attribute name="POPULATE" value="1"/>
 </part>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03X2" device="2X3_SILK_MALE_PTH" package3d_urn="urn:adsk.eagle:package:38016/1">
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03X2" device="2X3_SILK_MALE_PTH" package3d_urn="urn:adsk.eagle:package:38016/1">
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="J3" library="OPL_Connector" deviceset="GROVE-CONNECTOR-SMD(4+2P-2.0)" device="" package3d_urn="urn:adsk.eagle:package:8004549/1" value="H4P-SMD-2.0">
@@ -5916,10 +5916,18 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <part name="FRAME3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="" package3d_urn="urn:adsk.eagle:package:37121/1">
 <attribute name="POPULATE" value="0"/>
 </part>
-<part name="H1" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
-<part name="H2" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
-<part name="H3" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
-<part name="H4" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
+<part name="H1" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="H2" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="H3" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="H4" library="Custom Components" deviceset="STAND-OFF-M2.5" device="" package3d_urn="urn:adsk.eagle:package:38630/1">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="JP7" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_PASTE" device="_SILK">
 <attribute name="POPULATE" value="0"/>
 </part>
@@ -5965,7 +5973,7 @@ for Unprotected Environments</text>
 <attribute name="HOUSEPART" x="7.62" y="33.02" size="1.778" layer="96" display="off"/>
 <attribute name="POPULATE" x="7.62" y="33.02" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP2" gate="G$1" x="129.54" y="86.36" smashed="yes">
+<instance part="J7" gate="G$1" x="129.54" y="86.36" smashed="yes">
 <attribute name="VALUE" x="124.46" y="76.2" size="1.778" layer="96"/>
 <attribute name="NAME" x="124.46" y="97.282" size="1.778" layer="95"/>
 <attribute name="POPULATE" x="129.54" y="86.36" size="1.778" layer="96" display="off"/>
@@ -6094,7 +6102,7 @@ for Unprotected Environments</text>
 <attribute name="MPN" x="96.52" y="90.17" size="1.778" layer="96" display="off"/>
 <attribute name="POPULATE" x="96.52" y="90.17" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J2" gate="G$1" x="96.52" y="69.85" smashed="yes">
+<instance part="J6" gate="G$1" x="96.52" y="69.85" smashed="yes">
 <attribute name="NAME" x="88.9" y="76.2" size="1.27" layer="95" ratio="10"/>
 <attribute name="VALUE" x="80.01" y="63.5" size="1.27" layer="96" ratio="10"/>
 <attribute name="MPN" x="96.52" y="69.85" size="1.778" layer="96" display="off"/>
@@ -6103,7 +6111,7 @@ for Unprotected Environments</text>
 <instance part="GND4" gate="1" x="109.22" y="35.56" smashed="yes">
 <attribute name="VALUE" x="106.68" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="J4" gate="G$1" x="134.62" y="60.96" smashed="yes">
+<instance part="J2" gate="G$1" x="134.62" y="60.96" smashed="yes">
 <attribute name="NAME" x="131.064" y="66.548" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="131.318" y="55.118" size="1.778" layer="96" font="vector" align="top-left"/>
 <attribute name="POPULATE" x="134.62" y="60.96" size="1.778" layer="96" display="off"/>
@@ -6114,10 +6122,18 @@ for Unprotected Environments</text>
 <attribute name="MPN" x="96.52" y="49.53" size="1.778" layer="96" display="off"/>
 <attribute name="POPULATE" x="96.52" y="49.53" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="H1" gate="G$1" x="228.6" y="20.32" smashed="yes"/>
-<instance part="H2" gate="G$1" x="233.68" y="20.32" smashed="yes"/>
-<instance part="H3" gate="G$1" x="238.76" y="20.32" smashed="yes"/>
-<instance part="H4" gate="G$1" x="243.84" y="20.32" smashed="yes"/>
+<instance part="H1" gate="G$1" x="228.6" y="20.32" smashed="yes">
+<attribute name="POPULATE" x="228.6" y="20.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H2" gate="G$1" x="233.68" y="20.32" smashed="yes">
+<attribute name="POPULATE" x="233.68" y="20.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H3" gate="G$1" x="238.76" y="20.32" smashed="yes">
+<attribute name="POPULATE" x="238.76" y="20.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H4" gate="G$1" x="243.84" y="20.32" smashed="yes">
+<attribute name="POPULATE" x="243.84" y="20.32" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6149,7 +6165,7 @@ for Unprotected Environments</text>
 <wire x1="7.62" y1="27.94" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="J7" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
 <label x="137.16" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -6181,7 +6197,7 @@ for Unprotected Environments</text>
 </segment>
 <segment>
 <wire x1="83.82" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="J6" gate="G$1" pin="4"/>
 <label x="83.82" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6198,7 +6214,7 @@ for Unprotected Environments</text>
 <wire x1="96.52" y1="82.55" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <junction x="109.22" y="81.28"/>
-<pinref part="J2" gate="G$1" pin="SS2"/>
+<pinref part="J6" gate="G$1" pin="SS2"/>
 <wire x1="109.22" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="60.96" x2="96.52" y2="62.23" width="0.1524" layer="91"/>
 <junction x="109.22" y="60.96"/>
@@ -6206,7 +6222,7 @@ for Unprotected Environments</text>
 <wire x1="96.52" y1="57.15" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
 <junction x="109.22" y="58.42"/>
-<pinref part="J2" gate="G$1" pin="SS1"/>
+<pinref part="J6" gate="G$1" pin="SS1"/>
 <wire x1="96.52" y1="77.47" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
 <junction x="109.22" y="78.74"/>
@@ -6216,7 +6232,7 @@ for Unprotected Environments</text>
 <wire x1="96.52" y1="40.64" x2="96.52" y2="41.91" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="127" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
 <label x="119.38" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -6257,13 +6273,13 @@ for Unprotected Environments</text>
 <pinref part="P1" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
+<pinref part="J7" gate="G$1" pin="4"/>
 <wire x1="134.62" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <label x="137.16" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 <label x="83.82" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6279,13 +6295,13 @@ for Unprotected Environments</text>
 <pinref part="P1" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="5"/>
+<pinref part="J7" gate="G$1" pin="5"/>
 <wire x1="134.62" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 <label x="137.16" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J6" gate="G$1" pin="2"/>
 <label x="83.82" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6347,7 +6363,7 @@ for Unprotected Environments</text>
 </net>
 <net name="D2" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
+<pinref part="J7" gate="G$1" pin="3"/>
 <wire x1="134.62" y1="86.36" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
 <label x="137.16" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -6359,7 +6375,7 @@ for Unprotected Environments</text>
 </net>
 <net name="D3" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="J7" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <label x="137.16" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -6452,7 +6468,7 @@ for Unprotected Environments</text>
 </net>
 <net name="VCC-EXT" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="5"/>
+<pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="127" y1="58.42" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 <label x="114.3" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -6505,7 +6521,7 @@ for Unprotected Environments</text>
 <label x="149.86" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
 <label x="147.32" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -6548,7 +6564,7 @@ for Unprotected Environments</text>
 <label x="147.32" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="142.24" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
 <label x="147.32" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -6560,7 +6576,7 @@ for Unprotected Environments</text>
 <label x="147.32" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="6"/>
+<pinref part="J2" gate="G$1" pin="6"/>
 <wire x1="142.24" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 <label x="147.32" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -6572,7 +6588,7 @@ for Unprotected Environments</text>
 <label x="149.86" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="127" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
 <label x="119.38" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -6612,13 +6628,13 @@ for Unprotected Environments</text>
 </net>
 <net name="VCC2-EXT" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="6"/>
+<pinref part="J7" gate="G$1" pin="6"/>
 <wire x1="134.62" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 <label x="137.16" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="J6" gate="G$1" pin="3"/>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6756,7 +6772,7 @@ The Boron can handle up to 9V</text>
 <attribute name="VALUE" x="165.862" y="52.07" size="1.778" layer="96" rot="R90"/>
 <attribute name="MPN" x="162.56" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="J6" gate="G$1" x="76.2" y="96.52" smashed="yes">
+<instance part="J4" gate="G$1" x="76.2" y="96.52" smashed="yes">
 <attribute name="NAME" x="73.66" y="102.362" size="1.778" layer="95"/>
 <attribute name="MFG" x="76.2" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
@@ -6890,7 +6906,7 @@ The Boron can handle up to 9V</text>
 <pinref part="C8" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="-"/>
+<pinref part="J4" gate="G$1" pin="-"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="76.2" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="91.44" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
@@ -6955,7 +6971,7 @@ The Boron can handle up to 9V</text>
 <wire x1="78.74" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="76.2" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 <junction x="78.74" y="76.2"/>
-<pinref part="J6" gate="G$1" pin="+"/>
+<pinref part="J4" gate="G$1" pin="+"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="86.36" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <junction x="78.74" y="86.36"/>
